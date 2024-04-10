@@ -1,0 +1,11 @@
+{
+  "firstname": "Juan",
+  "lastname": "Nuñez",
+  "totalprice": 2000,
+  "depositpaid": false,
+  "bookingdates": {
+    "checkin": "$bookingdates.checkin",
+    "checkout": "2024-01-01"
+  },
+  "additionalneeds": "tester"
+}
