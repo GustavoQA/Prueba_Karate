@@ -5,7 +5,7 @@ Feature: Albunes
     * url baseSpotify
     * def Token = call read('classpath:examples/01-Post/getTokenSpotify.feature')
 
-  @uno
+  @1
   Scenario Outline:  Validaciones de album <Nombre> , direccion <Etiqueta> ,con Popularidad <Popularidad>
     Given path '/v1/albums/4aawyAB9vmqN3uQ7FjRGTy'
     And header Authorization = Token.getToken
@@ -31,7 +31,7 @@ Feature: Albunes
       | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 58         |
       | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 58          |
 
-  @dos
+  @2
   Scenario Outline:  Validacioness de album <Nombre> , direccion <Etiqueta> ,con Popularidad <Popularidad>
     Given path '/v1/albums/4aawyAB9vmqN3uQ7FjRGTy'
     And header Authorization = Token.getToken
