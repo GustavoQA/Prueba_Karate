@@ -23,13 +23,13 @@ Feature: Albunes
     * print validarNombre
     * def validarTipoAlbum = $.album_type
     * match validarTipoAlbum == '#regex [a-zA-Z]+'
-    * karate.embed(respuesta, 'json')
+    #* karate.embed(respuesta, 'json')
 
 
     Examples:
       | ID                       | Etiqueta                                | Nombre           | Popularidad |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 58         |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 58          |
+      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 52         |
+      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 52          |
 
   @2
   Scenario Outline:  Validacioness de album <Nombre> , direccion <Etiqueta> ,con Popularidad <Popularidad>
@@ -49,12 +49,12 @@ Feature: Albunes
     * print validarNombre
     * def validarTipoAlbum = $.album_type
     * match validarTipoAlbum == '#regex [a-zA-Z]+'
-    * karate.embed(respuesta, 'json')
+    #* karate.embed(respuesta, 'json')
 
 
     Examples:
       | ID                       | Etiqueta                                | Nombre           | Popularidad |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 58          |
+      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 52          |
 
 
 
