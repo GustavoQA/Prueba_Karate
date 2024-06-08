@@ -1,0 +1,4 @@
+id,firstname,lastname,depositpaid,checkin,checkout
+1,Winter,Olivera,true,2023-04-01,2026-04-02
+2,Nohe,Salazar,false,2023-04-02,2025-02-01
+3,Paolo,Guerrero,true,2023-04-01,2025-03-01

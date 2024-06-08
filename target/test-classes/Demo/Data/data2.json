@@ -1,0 +1,14 @@
+{
+  "code": "TL9999",
+  "description": "Ocurriounerrorinesperado.PorfavorcontactarseconelSoporteTecnico.",
+  "errorType": "TECHNICAL",
+  "exceptionDetails": [
+    {
+      "component": "exceptionDetails[0].component"
+    },
+    {
+      "component": "exceptionDetails[1].component",
+      "description": "java.lang.ArrayIndexOutOfBoundsExceptionmin.1094)"
+    }
+  ]
+}
