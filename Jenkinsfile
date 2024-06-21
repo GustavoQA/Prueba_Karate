@@ -48,8 +48,8 @@ pipeline {
            stage('Fase: Generar Reporte cucumber') {
                     steps {
                         cucumber buildStatus: "UNSTABLE",
-                                fileIncludePattern: '**/examples.02-Get.albumSpotify.json',
-                                jsonReportDirectory: 'target'
+                                fileIncludePattern: '**/*.json',
+                                jsonReportDirectory: 'target/karate-reports/res'
 
                     }
 
