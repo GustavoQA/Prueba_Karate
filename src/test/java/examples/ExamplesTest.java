@@ -28,7 +28,7 @@ class ExamplesTest {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
-        Configuration config = new Configuration(new File("target"), "Pruebas APIS Gustavo Karate y cucumber report");
+        Configuration config = new Configuration(new File("target"), "Pruebas Automatizadas");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }

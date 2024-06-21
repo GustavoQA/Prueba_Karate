@@ -48,7 +48,7 @@ pipeline {
            stage('Fase: Generar Reporte cucumber') {
                     steps {
                         cucumber buildStatus: "UNSTABLE",
-                                fileIncludePattern: '**/cucumber.json',
+                                fileIncludePattern: '**/examples.02-Get.albumSpotify.json',
                                 jsonReportDirectory: 'target'
 
                     }
