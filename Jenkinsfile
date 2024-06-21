@@ -46,20 +46,33 @@ pipeline {
         }
 
            stage('Fase: Generar Reporte cucumber') {
-                    steps {
-                        cucumber buildStatus: "UNSTABLE",
-                                fileIncludePattern: 'examples.02-Get.albumSpotify.json',
-                                jsonReportDirectory: 'target/karate-reports/res/'
-
-                    }
+                cucumber buildStatus: 'UNSTABLE',
+                                reportTitle: 'My report',
+                                fileIncludePattern: '**/examples.02-Get.albumSpotify.json',
+                                trendsLimit: 10,
+                                classifications: [
+                                    [
+                                        'key': 'Browser',
+                                        'value': 'Firefox'
+                                    ]
+                                ]
 
                     post {
-                                    // If Maven was able to run the tests, even if some of the test
-                                    // failed, record the test results and archive the jar file.
-                                    success {
-                                        junit '**/target/surefire-reports/TEST-*.xml'
-                                        archiveArtifacts 'target/*.jar'
-                                    }
+                                  always {
+                                          cucumber buildStatus: 'UNSTABLE',
+                                                  failedFeaturesNumber: 1,
+                                                  failedScenariosNumber: 1,
+                                                  skippedStepsNumber: 1,
+                                                  failedStepsNumber: 1,
+                                                  classifications: [
+                                                          [key: 'Commit', value: '<a href="${GERRIT_CHANGE_URL}">${GERRIT_PATCHSET_REVISION}</a>'],
+                                                          [key: 'Submitter', value: '${GERRIT_PATCHSET_UPLOADER_NAME}']
+                                                  ],
+                                                  reportTitle: 'My report',
+                                                  fileIncludePattern: '**/*examples.02-Get.albumSpotify.json',
+                                                  sortingMethod: 'ALPHABETICAL',
+                                                  trendsLimit: 100
+                                      }
                                 }
 
                 }
