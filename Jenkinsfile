@@ -6,9 +6,10 @@ pipeline {
         maven "maven_3.8.5"
     }
 
-  parameters {
-      string(name: 'tags', defaultValue: '@regression', description: 'Cucumber tags to execute')
-  }
+ parameters {
+   string description: 'Escriba el Tag del escenario , Ejemplo :  @prueba ', name: 'tags', trim: true
+ }
+
 
 
     stages {
