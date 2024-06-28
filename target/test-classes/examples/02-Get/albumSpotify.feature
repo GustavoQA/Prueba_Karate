@@ -28,8 +28,8 @@ Feature: Albunes
 
     Examples:
       | ID                       | Etiqueta                                | Nombre           | Popularidad |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 53         |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 53          |
+      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 54         |
+      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 54          |
 
   @2
   Scenario Outline:  Validacioness de album <Nombre> , direccion <Etiqueta> ,con Popularidad <Popularidad>
@@ -54,7 +54,7 @@ Feature: Albunes
 
     Examples:
       | ID                       | Etiqueta                                | Nombre           | Popularidad |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 53          |
+      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 54          |
 
 
 
