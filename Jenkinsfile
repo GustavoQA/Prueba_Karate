@@ -8,14 +8,15 @@ pipeline {
 
   parameters {
    choice(
-             name: 'environment',
+             name: 'Ambiente',
              choices: ['cert', 'dev'],
-             description: 'Seleccione el entorno para realizar las pruebas'
+             description: 'Seleccione el Ambiente de entono para realizar las pruebas'
           )
           string(
               name: 'karateTags',
               defaultValue: '',  // Optional default tag
-              description: 'para ejecutar multiples tags (comma-separated list, ejemplo: @smoke,@regression)'
+              description: 'para ejecutar multiples tags ejemplo: @smoke,@regression)',
+              trim: true
           )
       }
 
