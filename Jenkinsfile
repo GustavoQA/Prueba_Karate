@@ -41,7 +41,7 @@ pipeline {
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
                 // To run Maven on a Windows agent, use
-                bat 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags ${name}"'
+                bat 'mvn clean test -Dkarate.env=cert -Dkarate.options=--tags ${name}'
             }
         }
 
