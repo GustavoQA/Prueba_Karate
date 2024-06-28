@@ -7,8 +7,12 @@ pipeline {
     }
 
   parameters {
-       string defaultValue: '@SPY', description: 'Tags para pruebas ejemplos : @Regresion_01 @Certificacion', name: 'name'
-     }
+          string(
+              name: 'karateTags',
+              defaultValue: '@SPY',  // Optional default tag
+              description: 'Karate tags to execute (comma-separated list, e.g., @smoke,@regression)'
+          )
+      }
 
     stages {
         stage('Checkout from GitHub'){
@@ -39,9 +43,12 @@ pipeline {
 
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
+               script{
+               bat """mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags ${params.karateTags}" """
 
+               }
                 // To run Maven on a Windows agent, use
-                bat 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags @SPY"'
+               // bat 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags @SPY"'
             }
         }
 
