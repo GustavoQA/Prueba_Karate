@@ -7,6 +7,11 @@ pipeline {
     }
 
   parameters {
+   choice(
+             name: 'environment',
+             choices: ['cert', 'dev'],
+             description: 'Seleccione el entorno para realizar las pruebas'
+          )
           string(
               name: 'karateTags',
               defaultValue: '',  // Optional default tag
@@ -44,7 +49,7 @@ pipeline {
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
                script{
-               bat """mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags ${params.karateTags}" """
+               bat """mvn clean test -Dkarate.env=${params.environment} "-Dkarate.options=--tags ${params.karateTags}" """
 
                }
                 // To run Maven on a Windows agent, use
