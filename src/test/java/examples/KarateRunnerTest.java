@@ -30,7 +30,7 @@ public class KarateRunnerTest {
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
         Configuration config = new Configuration(
-                new File("target"), "Chapter Backend Karate");
+                new File("target"), "Pruebas Automatizadas con Karate");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }

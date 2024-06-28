@@ -5,7 +5,7 @@ Feature: Albunes
     * url baseSpotify
     * def Token = call read('classpath:examples/01-Post/getTokenSpotify.feature')
 
-  @1
+  @DataCSV
   Scenario Outline:  Validaciones de album <Nombre> , direccion <Etiqueta> ,con Popularidad <Popularidad>
     Given path '/v1/albums/4aawyAB9vmqN3uQ7FjRGTy'
     And header Authorization = Token.getToken
@@ -25,18 +25,15 @@ Feature: Albunes
     * match validarTipoAlbum == '#regex [a-zA-Z]+'
     #* karate.embed(respuesta, 'json')
 
-
     Examples:
-      | ID                       | Etiqueta                                | Nombre           | Popularidad |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 54         |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 54          |
+      | read('classpath:req/DataSpotify.csv') |
 
-  @2
+  @Outline
   Scenario Outline:  Validacioness de album <Nombre> , direccion <Etiqueta> ,con Popularidad <Popularidad>
     Given path '/v1/albums/4aawyAB9vmqN3uQ7FjRGTy'
     And header Authorization = Token.getToken
     When method GET
-    Then status 200
+    Then status <RPTA>
     * def respuesta = response
     * print respuesta
     * match $.id == <ID>
@@ -53,8 +50,8 @@ Feature: Albunes
 
 
     Examples:
-      | ID                       | Etiqueta                                | Nombre           | Popularidad |
-      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 54          |
+      | ID                       | Etiqueta                                | Nombre           | Popularidad | RPTA |
+      | '4aawyAB9vmqN3uQ7FjRGTy' | 'Mr.305/Polo Grounds Music/RCA Records' | 'Global Warming' | 54          | 200  |
 
 
 
