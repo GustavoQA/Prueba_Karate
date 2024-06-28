@@ -62,7 +62,7 @@ pipeline {
                       steps {
                            cucumber buildStatus: "UNSTABLE",
                                           fileIncludePattern: "**/*.json",
-                                          jsonReportDirectory: "target"
+                                          jsonReportDirectory: "target/karate-reports"
                       }
 
 
