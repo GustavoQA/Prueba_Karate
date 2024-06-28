@@ -10,8 +10,12 @@ pipeline {
           string(
               name: 'karateTags',
               defaultValue: '',  // Optional default tag
-              description: 'Karate tags to execute (comma-separated list, e.g., @smoke,@regression)'
+              description: 'para ejecutar multiples tags (comma-separated list, ejemplo: @smoke,@regression)'
           )
+          choice
+          choices: ['cert', 'dev'],
+          description: 'Seleccione el ambiente a probar',
+          name: 'Ambiente'
       }
 
     stages {
@@ -44,7 +48,7 @@ pipeline {
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
                script{
-               bat """mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags ${params.karateTags}" """
+               bat """mvn clean test -Dkarate.env=${params.Ambiente} "-Dkarate.options=--tags ${params.karateTags}" """
 
                }
                 // To run Maven on a Windows agent, use
