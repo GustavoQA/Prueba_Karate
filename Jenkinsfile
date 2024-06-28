@@ -12,6 +12,7 @@ pipeline {
               defaultValue: '',  // Optional default tag
               description: 'para ejecutar multiples tags (comma-separated list, ejemplo: @smoke,@regression)'
           )
+      }
 
     stages {
         stage('Checkout from GitHub'){
@@ -43,7 +44,7 @@ pipeline {
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
                script{
-               bat """mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags ${params.karateTags}" """
+               bat """mvn clean test -Dkarate.env=${params.Ambiente} "-Dkarate.options=--tags ${params.karateTags}" """
 
                }
                 // To run Maven on a Windows agent, use
