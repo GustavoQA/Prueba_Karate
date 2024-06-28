@@ -6,14 +6,9 @@ pipeline {
         maven "maven_3.8.5"
     }
 
-   parameters {
-     choice choices: ['cert', 'dev'],
-     description: 'Por favor escoga el ambiente a ejecutar',
-     name: 'Ambiente'
-     string description: 'Escriba el Tag del escenario , Ejemplo :  @prueba ',
-     name: 'tags',
-     trim: true
-   }
+  parameters {
+      string(name: 'tags', defaultValue: '@regression', description: 'Cucumber tags to execute')
+  }
 
 
     stages {
@@ -47,7 +42,7 @@ pipeline {
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
                 // To run Maven on a Windows agent, use
-                bat 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags @SPY"'
+                bat 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags ${params.tags}"'
             }
         }
 
