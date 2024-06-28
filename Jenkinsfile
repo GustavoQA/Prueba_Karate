@@ -45,20 +45,22 @@ pipeline {
             }
         }
 
-           stage('Fase: Generar Reporte cucumber') {
-                cucumber buildStatus: 'UNSTABLE',
-                                reportTitle: 'My report',
-                                fileIncludePattern: '**/examples.02-Get.albumSpotify.json',
-                                trendsLimit: 10,
-                                classifications: [
-                                    [
-                                        'key': 'Browser',
-                                        'value': 'Firefox'
-                                    ]
-                                ]
+             stage('Fase: Generar Reporte cucumber') {
+                      steps {
+                          cucumber buildStatus: "UNSTABLE",
+                                  fileIncludePattern: '**/cucumber.json',
+                                  jsonReportDirectory: 'target'
+                      }
 
-                   }
+                      post {
+                                      // If Maven was able to run the tests, even if some of the test
+                                      // failed, record the test results and archive the jar file.
+                                      success {
+                                          junit '**/target/surefire-reports/TEST-*.xml'
+                                          archiveArtifacts 'target/*.jar'
+                                      }
+                                  }
+                  }
+      }
 
-    }
-
-}
+  }
