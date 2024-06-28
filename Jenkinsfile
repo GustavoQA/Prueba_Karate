@@ -6,9 +6,15 @@ pipeline {
         maven "maven_3.8.5"
     }
 
-    parameters {
-      string defaultValue: '@API', description: 'Tags para pruebas ejemplos : @Regresion_01 @Certificacion', name: '@SPY'
-    }
+   parameters {
+     choice choices: ['cert', 'dev'],
+     description: 'Por favor escoga el ambiente a ejecutar',
+     name: 'Ambiente'
+     string description: 'Escriba el Tag del escenario , Ejemplo :  @prueba ',
+     name: 'tags',
+     trim: true
+   }
+
 
     stages {
         stage('Checkout from GitHub'){
@@ -41,7 +47,7 @@ pipeline {
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
                 // To run Maven on a Windows agent, use
-                bat 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags ${name}"'
+                bat 'mvn clean test -Dkarate.env=${Ambiente} "-Dkarate.options=--tags ${tags}"'
             }
         }
 
