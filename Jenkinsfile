@@ -9,7 +9,7 @@ pipeline {
   parameters {
           string(
               name: 'karateTags',
-              defaultValue: '@SPY',  // Optional default tag
+              defaultValue: '',  // Optional default tag
               description: 'Karate tags to execute (comma-separated list, e.g., @smoke,@regression)'
           )
       }
