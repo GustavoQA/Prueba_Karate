@@ -7,7 +7,7 @@ pipeline {
     }
 
  parameters {
-   string(description: 'Escriba el Tag del escenario , Ejemplo :  @prueba ', name: '@SPY', trim: true, defaultValue: '@SPY'
+   string(description: 'Escriba el Tag del escenario , Ejemplo :  @prueba ', name: '@SPY', trim: true, defaultValue: '@SPY')
  }
 
 
