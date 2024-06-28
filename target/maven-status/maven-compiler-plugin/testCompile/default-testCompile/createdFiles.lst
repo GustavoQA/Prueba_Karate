@@ -1,6 +1,5 @@
 helpers\UtilClass.class
 helpers\Encriptardata.class
 helpers\prueba.class
-Demo\KarateRunner.class
 helpers\DataGenerator.class
-examples\ExamplesTest.class
+examples\KarateRunnerTest.class

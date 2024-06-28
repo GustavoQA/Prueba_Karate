@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: examples.ExamplesTest
+Test set: examples.KarateRunnerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.663 s - in examples.ExamplesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.604 s - in examples.KarateRunnerTest

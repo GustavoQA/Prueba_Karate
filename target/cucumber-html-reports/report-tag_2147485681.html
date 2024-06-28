@@ -73,8 +73,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>Pruebas Automatizadas</td>
-      <td>28 Jun 2024, 11:23</td>
+      <td>Chapter Backend Karate</td>
+      <td>28 Jun 2024, 16:01</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="768026300">0.768</td>
+          <td class="duration" data-value="1125676300">1.125</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -182,7 +182,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.768</span>
+  <span class="lead-duration duration">1.125</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -225,7 +225,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path '/v1/albums/4aawyAB9vmqN3uQ7FjRGTy'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -252,7 +252,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = Token.getToken</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -279,7 +279,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.718</span>
+  <span class="lead-duration duration">0.764</span>
 
 </div>
 
@@ -297,16 +297,16 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:23:18.330 request:
+        <pre>16:00:55.031 request:
 3 &gt; GET https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy
-3 &gt; Authorization: Bearer BQBxu2CyR0Df2C9iZsZTiAlY7NWVIVG9Wyhmmy3L3VjHe-7O5_gd7CjndeSLgM8O6WF6QqZvN834HwY6hsz1nZ3PzqDMAZiFxBSHRO2eQnXZQcC50rg
+3 &gt; Authorization: Bearer BQBUJcuFTRGyKf7bAzIgW7UKFs76FvFKdO9X4kgt8ZmmhVxKmqnC_JYinBJIoioU28JBLHujKlSzRFdyMq0yreq5oA3gcwvC_UxxlsF8Z6P8WDFn-uQ
 3 &gt; Host: api.spotify.com
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 3 &gt; Accept-Encoding: gzip,deflate
 
 
-11:23:19.036 response time in milliseconds: 679
+16:00:55.777 response time in milliseconds: 723
 3 &lt; 200
 3 &lt; content-type: application/json; charset=utf-8
 3 &lt; cache-control: public, max-age=7200
@@ -318,7 +318,7 @@ $(document).ready(function() {
 3 &lt; access-control-max-age: 604800
 3 &lt; strict-transport-security: max-age=31536000
 3 &lt; x-content-type-options: nosniff
-3 &lt; date: Fri, 28 Jun 2024 16:23:18 GMT
+3 &lt; date: Fri, 28 Jun 2024 21:00:55 GMT
 3 &lt; server: envoy
 3 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 3 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
@@ -1102,7 +1102,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def respuesta = response</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1129,7 +1129,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print respuesta</span>
 
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.234</span>
 
 </div>
 
@@ -1147,7 +1147,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>11:23:19.062 [print] {
+        <pre>16:00:56.027 [print] {
   &quot;album_type&quot;: &quot;album&quot;,
   &quot;artists&quot;: [
     {
@@ -4152,7 +4152,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match $.id == '4aawyAB9vmqN3uQ7FjRGTy'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -4179,7 +4179,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match $.label == 'Mr.305/Polo Grounds Music/RCA Records'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -4206,7 +4206,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match $.name == 'Global Warming'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -4233,7 +4233,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match $.popularity == 54</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.091</span>
 
 </div>
 
@@ -4260,7 +4260,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match $.label == '#string'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -4287,7 +4287,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match $ contains {&quot;type&quot;: &quot;album&quot;}</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4314,7 +4314,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def validarNombre = $.name</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -4341,7 +4341,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print validarNombre</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -4359,7 +4359,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>11:23:19.074 [print] Global Warming 
+        <pre>16:00:56.146 [print] Global Warming 
 </pre>
       </div>
     </div>
@@ -4379,7 +4379,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def validarTipoAlbum = $.album_type</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -4406,7 +4406,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match validarTipoAlbum == '#regex [a-zA-Z]+'</span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 

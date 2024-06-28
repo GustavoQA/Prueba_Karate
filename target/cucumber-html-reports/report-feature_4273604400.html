@@ -73,8 +73,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>Pruebas Automatizadas</td>
-      <td>28 Jun 2024, 11:23</td>
+      <td>Chapter Backend Karate</td>
+      <td>28 Jun 2024, 16:01</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="15516314200">15.516</td>
+          <td class="duration" data-value="23935740100">23.935</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.393</span>
+  <span class="lead-duration duration">7.008</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -234,7 +234,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">url baseSpotify</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -252,7 +252,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:23:15.863 Se realiz&oacute; la ejecuci&oacute;n en el ambiente:  cert 
+        <pre>16:00:50.971 Se realiz&oacute; la ejecuci&oacute;n en el ambiente:  cert 
 </pre>
       </div>
     </div>
@@ -272,7 +272,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def Token = call read('classpath:examples/01-Post/getTokenSpotify.feature')</span>
 
-  <span class="lead-duration duration">2.246</span>
+  <span class="lead-duration duration">3.627</span>
 
 </div>
 
@@ -326,7 +326,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; Given</span>
   <span class="name">url 'https://accounts.spotify.com/'</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -353,7 +353,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">path 'api','token'</span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.042</span>
 
 </div>
 
@@ -407,7 +407,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field grant_type = 'client_credentials'</span>
 
-  <span class="lead-duration duration">0.236</span>
+  <span class="lead-duration duration">0.515</span>
 
 </div>
 
@@ -434,7 +434,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_id = '98beab865b0a4976bc5c81a0aabbeaa8'</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -461,7 +461,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_secret = '1a350f35c33b413c849d09c6ae8d38e9'</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -488,7 +488,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">1.174</span>
+  <span class="lead-duration duration">1.894</span>
 
 </div>
 
@@ -506,7 +506,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>11:23:16.759 request:
+        <pre>16:00:52.701 request:
 1 &gt; POST https://accounts.spotify.com/api/token
 1 &gt; Content-Type: application/x-www-form-urlencoded
 1 &gt; Content-Length: 119
@@ -516,12 +516,12 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp;client_secret=1a350f35c33b413c849d09c6ae8d38e9
 
-11:23:17.469 response time in milliseconds: 697
+16:00:53.871 response time in milliseconds: 1141
 1 &lt; 200
-1 &lt; date: Fri, 28 Jun 2024 16:23:17 GMT
+1 &lt; date: Fri, 28 Jun 2024 21:00:53 GMT
 1 &lt; content-type: application/json
-1 &lt; sp-trace-id: fb46d79bd469ac2c
-1 &lt; x-envoy-upstream-service-time: 14
+1 &lt; sp-trace-id: 3b2758e870e6b12c
+1 &lt; x-envoy-upstream-service-time: 10
 1 &lt; server: envoy
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
@@ -529,9 +529,9 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Set-Cookie: __Host-device_id=AQAFgXoieBbuh6ONRhE4cM6Lk7-BM4xO6zVW6_yBeu6yalmcTzpEm8HajecsfSTziIvxHF_OJlGPKl0FPvZ2diHuZoGEDOQhnks; Max-Age=3867075444452; Expires=Fri, 27 Mar 124567 07:50:49 GMT; Domain=accounts.spotify.com; Secure
+1 &lt; Set-Cookie: __Host-device_id=AQB9OVIlzQutzJlqFpVYU2sFQpogOb7NpnjXBa2iceLwdM4XprRUhdTPMMYPw7_JaDQ4AWlq3uz2fS4U62kl8jI0dACIhpMqiJk; Max-Age=3867092100833; Expires=Tue, 06 Oct 124567 07:14:46 GMT; Domain=accounts.spotify.com; Secure
 1 &lt; Set-Cookie: sp_tr=false; Domain=accounts.spotify.com; Secure
-{&quot;access_token&quot;:&quot;BQBoBbHwLgVTFuCQhJXCBN7oxEtLk9HBid6zZPaTdCaKRSTJVY9bq-o-RxL-nCPknXkYSSUTGPFS7ZbglBJcXly5vKsttE6ymO6_bAxGHh5XGkehfN0&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+{&quot;access_token&quot;:&quot;BQBWp6m9EoGwip_QG_BWMUiz9V0-7AJtqqEgrnUq4W_6J4uPRKbX7Nvtvu5Ef4POdG0L3f9i1gLIURTsZKoC65EoX6I6Zroe9AMcb82UcnmY-v81XIY&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
 
 </pre>
       </div>
@@ -552,7 +552,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.044</span>
 
 </div>
 
@@ -570,8 +570,8 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>11:23:17.577 [print] {
-  &quot;access_token&quot;: &quot;BQBoBbHwLgVTFuCQhJXCBN7oxEtLk9HBid6zZPaTdCaKRSTJVY9bq-o-RxL-nCPknXkYSSUTGPFS7ZbglBJcXly5vKsttE6ymO6_bAxGHh5XGkehfN0&quot;,
+        <pre>16:00:54.166 [print] {
+  &quot;access_token&quot;: &quot;BQBWp6m9EoGwip_QG_BWMUiz9V0-7AJtqqEgrnUq4W_6J4uPRKbX7Nvtvu5Ef4POdG0L3f9i1gLIURTsZKoC65EoX6I6Zroe9AMcb82UcnmY-v81XIY&quot;,
   &quot;token_type&quot;: &quot;Bearer&quot;,
   &quot;expires_in&quot;: 3600
 }
@@ -595,7 +595,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == '#string'</span>
 
-  <span class="lead-duration duration">0.077</span>
+  <span class="lead-duration duration">0.137</span>
 
 </div>
 
@@ -622,7 +622,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == 'Bearer'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -649,7 +649,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">def getToken = 'Bearer '+response.access_token</span>
 
-  <span class="lead-duration duration">0.023</span>
+  <span class="lead-duration duration">0.049</span>
 
 </div>
 
@@ -676,7 +676,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print getToken</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -694,7 +694,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>11:23:17.689 [print] Bearer BQBoBbHwLgVTFuCQhJXCBN7oxEtLk9HBid6zZPaTdCaKRSTJVY9bq-o-RxL-nCPknXkYSSUTGPFS7ZbglBJcXly5vKsttE6ymO6_bAxGHh5XGkehfN0 
+        <pre>16:00:54.378 [print] Bearer BQBWp6m9EoGwip_QG_BWMUiz9V0-7AJtqqEgrnUq4W_6J4uPRKbX7Nvtvu5Ef4POdG0L3f9i1gLIURTsZKoC65EoX6I6Zroe9AMcb82UcnmY-v81XIY 
 </pre>
       </div>
     </div>
@@ -741,7 +741,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">path 'api','token'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -795,7 +795,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field grant_type = 'client_credentials'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -822,7 +822,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_id = '98beab865b0a4976bc5c81a0aabbeaa8'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -849,7 +849,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_secret = '1a350f35c33b413c849d09c6ae8d38e9'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.031</span>
 
 </div>
 
@@ -876,7 +876,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.563</span>
+  <span class="lead-duration duration">0.602</span>
 
 </div>
 
@@ -894,7 +894,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>11:23:17.760 request:
+        <pre>16:00:54.494 request:
 2 &gt; POST https://accounts.spotify.com/api/token
 2 &gt; Content-Type: application/x-www-form-urlencoded
 2 &gt; Content-Length: 119
@@ -904,12 +904,12 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 2 &gt; Accept-Encoding: gzip,deflate
 grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp;client_secret=1a350f35c33b413c849d09c6ae8d38e9
 
-11:23:18.290 response time in milliseconds: 528
+16:00:55.082 response time in milliseconds: 586
 2 &lt; 200
-2 &lt; date: Fri, 28 Jun 2024 16:23:18 GMT
+2 &lt; date: Fri, 28 Jun 2024 21:00:55 GMT
 2 &lt; content-type: application/json
-2 &lt; sp-trace-id: 2bac594ef01930a6
-2 &lt; x-envoy-upstream-service-time: 11
+2 &lt; sp-trace-id: a60e73df4edbecff
+2 &lt; x-envoy-upstream-service-time: 6
 2 &lt; server: envoy
 2 &lt; strict-transport-security: max-age=31536000
 2 &lt; x-content-type-options: nosniff
@@ -917,9 +917,9 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 2 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 2 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Set-Cookie: __Host-device_id=AQC4awmjEIiAykeV_oMI2gPcVKWuLvce7xPpNm0tXU_jHxItvfdyuE2uMEiHMQRw1WausFpOaGJwDft32crN1lbjJ0DlbTEd1IU; Max-Age=3867075445287; Expires=Fri, 27 Mar 124567 08:04:45 GMT; Domain=accounts.spotify.com; Secure
+2 &lt; Set-Cookie: __Host-device_id=AQAfjTl6fkYo0xpin41GF4LEbpa79uT4DyJ_XofDux097mKW6r6XnFhDgVMTNWlnG2LfVOSAUmesbhcToS_7dhWlCgIFIV_xd44; Max-Age=3867092102079; Expires=Tue, 06 Oct 124567 07:35:34 GMT; Domain=accounts.spotify.com; Secure
 2 &lt; Set-Cookie: sp_tr=false; Domain=accounts.spotify.com; Secure
-{&quot;access_token&quot;:&quot;BQB6Uqs1G8sNfM0WF2N4BVP0dOtj2cgqJp08ghxD4VXzt0uEYDEw1a7ze9guN2yARNPJPdJonu6-SARn1kwr0tptxAD-YzpFRDyvANzlaFYsr6FhXq4&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+{&quot;access_token&quot;:&quot;BQCgISFErPT9GmpH64TwTK2XI9Tv0spWgjf2V2Cq2F_D7E8qAU1oQGZBQ70CdtOZ_WC5B4lM33jrtswE2yGFdmwBRWjpoJ0zSTbuAE6hFxsf4_o1e9A&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
 
 </pre>
       </div>
@@ -940,7 +940,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -958,8 +958,8 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-8" class="collapse collapsable-details">
-        <pre>11:23:18.315 [print] {
-  &quot;access_token&quot;: &quot;BQB6Uqs1G8sNfM0WF2N4BVP0dOtj2cgqJp08ghxD4VXzt0uEYDEw1a7ze9guN2yARNPJPdJonu6-SARn1kwr0tptxAD-YzpFRDyvANzlaFYsr6FhXq4&quot;,
+        <pre>16:00:55.095 [print] {
+  &quot;access_token&quot;: &quot;BQCgISFErPT9GmpH64TwTK2XI9Tv0spWgjf2V2Cq2F_D7E8qAU1oQGZBQ70CdtOZ_WC5B4lM33jrtswE2yGFdmwBRWjpoJ0zSTbuAE6hFxsf4_o1e9A&quot;,
   &quot;token_type&quot;: &quot;Bearer&quot;,
   &quot;expires_in&quot;: 3600
 }
@@ -983,7 +983,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == '#string'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1010,7 +1010,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == 'Bearer'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1037,7 +1037,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">def getToken = 'Bearer '+response.access_token</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1064,7 +1064,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print getToken</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1082,7 +1082,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-9" class="collapse collapsable-details">
-        <pre>11:23:18.318 [print] Bearer BQB6Uqs1G8sNfM0WF2N4BVP0dOtj2cgqJp08ghxD4VXzt0uEYDEw1a7ze9guN2yARNPJPdJonu6-SARn1kwr0tptxAD-YzpFRDyvANzlaFYsr6FhXq4 
+        <pre>16:00:55.103 [print] Bearer BQCgISFErPT9GmpH64TwTK2XI9Tv0spWgjf2V2Cq2F_D7E8qAU1oQGZBQ70CdtOZ_WC5B4lM33jrtswE2yGFdmwBRWjpoJ0zSTbuAE6hFxsf4_o1e9A 
 </pre>
       </div>
     </div>
@@ -1116,7 +1116,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 </div>
 
 
-  <span class="lead-duration duration">0.784</span>
+  <span class="lead-duration duration">1.017</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
@@ -1159,7 +1159,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">Given</span>
   <span class="name">path '/v1/albums/4aawyAB9vmqN3uQ7FjRGTy'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1186,7 +1186,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = Token.getToken</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1213,7 +1213,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.665</span>
+  <span class="lead-duration duration">0.714</span>
 
 </div>
 
@@ -1231,16 +1231,16 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-12" class="collapse collapsable-details">
-        <pre>11:23:18.323 request:
+        <pre>16:00:55.113 request:
 3 &gt; GET https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy
-3 &gt; Authorization: Bearer BQB6Uqs1G8sNfM0WF2N4BVP0dOtj2cgqJp08ghxD4VXzt0uEYDEw1a7ze9guN2yARNPJPdJonu6-SARn1kwr0tptxAD-YzpFRDyvANzlaFYsr6FhXq4
+3 &gt; Authorization: Bearer BQCgISFErPT9GmpH64TwTK2XI9Tv0spWgjf2V2Cq2F_D7E8qAU1oQGZBQ70CdtOZ_WC5B4lM33jrtswE2yGFdmwBRWjpoJ0zSTbuAE6hFxsf4_o1e9A
 3 &gt; Host: api.spotify.com
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 3 &gt; Accept-Encoding: gzip,deflate
 
 
-11:23:18.975 response time in milliseconds: 631
+16:00:55.809 response time in milliseconds: 652
 3 &lt; 200
 3 &lt; content-type: application/json; charset=utf-8
 3 &lt; cache-control: public, max-age=7200
@@ -1252,7 +1252,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 3 &lt; access-control-max-age: 604800
 3 &lt; strict-transport-security: max-age=31536000
 3 &lt; x-content-type-options: nosniff
-3 &lt; date: Fri, 28 Jun 2024 16:23:18 GMT
+3 &lt; date: Fri, 28 Jun 2024 21:00:55 GMT
 3 &lt; server: envoy
 3 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 3 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
@@ -2063,7 +2063,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">print respuesta</span>
 
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.105</span>
 
 </div>
 
@@ -2081,7 +2081,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-13" class="collapse collapsable-details">
-        <pre>11:23:19.021 [print] {
+        <pre>16:00:55.930 [print] {
   &quot;album_type&quot;: &quot;album&quot;,
   &quot;artists&quot;: [
     {
@@ -5086,7 +5086,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.id == '4aawyAB9vmqN3uQ7FjRGTy'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -5113,7 +5113,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.label == 'Mr.305/Polo Grounds Music/RCA Records'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -5140,7 +5140,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.name == 'Global Warming'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -5167,7 +5167,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.popularity == 54</span>
 
-  <span class="lead-duration duration">0.062</span>
+  <span class="lead-duration duration">0.173</span>
 
 </div>
 
@@ -5194,7 +5194,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.label == '#string'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -5221,7 +5221,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $ contains {&quot;type&quot;: &quot;album&quot;}</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -5248,7 +5248,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def validarNombre = $.name</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -5275,7 +5275,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">print validarNombre</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -5293,7 +5293,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-14" class="collapse collapsable-details">
-        <pre>11:23:19.093 [print] Global Warming 
+        <pre>16:00:56.120 [print] Global Warming 
 </pre>
       </div>
     </div>
@@ -5313,7 +5313,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def validarTipoAlbum = $.album_type</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -5340,7 +5340,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match validarTipoAlbum == '#regex [a-zA-Z]+'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -5378,7 +5378,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 </div>
 
 
-  <span class="lead-duration duration">4.349</span>
+  <span class="lead-duration duration">6.937</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
@@ -5421,7 +5421,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">url baseSpotify</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -5439,7 +5439,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-17" class="collapse collapsable-details">
-        <pre>11:23:15.863 Se realiz&oacute; la ejecuci&oacute;n en el ambiente:  cert 
+        <pre>16:00:50.972 Se realiz&oacute; la ejecuci&oacute;n en el ambiente:  cert 
 </pre>
       </div>
     </div>
@@ -5459,7 +5459,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def Token = call read('classpath:examples/01-Post/getTokenSpotify.feature')</span>
 
-  <span class="lead-duration duration">2.236</span>
+  <span class="lead-duration duration">3.602</span>
 
 </div>
 
@@ -5513,7 +5513,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; Given</span>
   <span class="name">url 'https://accounts.spotify.com/'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -5540,7 +5540,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">path 'api','token'</span>
 
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -5567,7 +5567,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">header Content-Type = 'application/x-www-form-urlencoded'</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -5594,7 +5594,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field grant_type = 'client_credentials'</span>
 
-  <span class="lead-duration duration">0.232</span>
+  <span class="lead-duration duration">0.488</span>
 
 </div>
 
@@ -5621,7 +5621,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_id = '98beab865b0a4976bc5c81a0aabbeaa8'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -5648,7 +5648,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_secret = '1a350f35c33b413c849d09c6ae8d38e9'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -5675,7 +5675,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">1.168</span>
+  <span class="lead-duration duration">1.900</span>
 
 </div>
 
@@ -5693,7 +5693,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-18" class="collapse collapsable-details">
-        <pre>11:23:16.759 request:
+        <pre>16:00:52.701 request:
 1 &gt; POST https://accounts.spotify.com/api/token
 1 &gt; Content-Type: application/x-www-form-urlencoded
 1 &gt; Content-Length: 119
@@ -5703,12 +5703,12 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 1 &gt; Accept-Encoding: gzip,deflate
 grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp;client_secret=1a350f35c33b413c849d09c6ae8d38e9
 
-11:23:17.469 response time in milliseconds: 697
+16:00:53.873 response time in milliseconds: 1141
 1 &lt; 200
-1 &lt; date: Fri, 28 Jun 2024 16:23:17 GMT
+1 &lt; date: Fri, 28 Jun 2024 21:00:53 GMT
 1 &lt; content-type: application/json
-1 &lt; sp-trace-id: 8cae7006fcc8ad37
-1 &lt; x-envoy-upstream-service-time: 9
+1 &lt; sp-trace-id: c94aa8b9f7a42101
+1 &lt; x-envoy-upstream-service-time: 11
 1 &lt; server: envoy
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
@@ -5716,9 +5716,9 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Set-Cookie: __Host-device_id=AQCnAT8LpFejWBeIE9drsX71hvlL7lnugkJLRlk2YNgEprouBpvSmrOhBSaBwXxXzSBqLe6c_pJVf0NWLRYuWa3FaD7-tZ8t9GM; Max-Age=3867075444452; Expires=Fri, 27 Mar 124567 07:50:49 GMT; Domain=accounts.spotify.com; Secure
+1 &lt; Set-Cookie: __Host-device_id=AQDwyxz88NZcuKJ4pJTsKXVIh6al4BKnqCJNsaEJYeJ9hbhueN9Bga_MjTD8eFiQ0GMjxfXakXIRQ7SZ0JGsYe06WX26QefXtnI; Max-Age=3867092100835; Expires=Tue, 06 Oct 124567 07:14:48 GMT; Domain=accounts.spotify.com; Secure
 1 &lt; Set-Cookie: sp_tr=false; Domain=accounts.spotify.com; Secure
-{&quot;access_token&quot;:&quot;BQBfCWnnVr8jZm3sV_pu38Gxn5D8gKRcPJHkBT0QtYREHqsem1X_RRPCbzL2e7W3-3GYO5Mhfm6cMrNeEnwKS5S48CNz2s7eumcC7dkk-kuYBO00tc0&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+{&quot;access_token&quot;:&quot;BQDKx8AiL-4hiUUO-xoUnUbtYdb55hfQO3s9FgGr95PxSj-e5Rqs5AGumei27S7dq0XLyxxcXC3iEpodqzcJx6Gef2NvXIBs-dbq1xEjxOE1QHBKMwY&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
 
 </pre>
       </div>
@@ -5739,7 +5739,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.017</span>
+  <span class="lead-duration duration">0.064</span>
 
 </div>
 
@@ -5757,8 +5757,8 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-19" class="collapse collapsable-details">
-        <pre>11:23:17.575 [print] {
-  &quot;access_token&quot;: &quot;BQBfCWnnVr8jZm3sV_pu38Gxn5D8gKRcPJHkBT0QtYREHqsem1X_RRPCbzL2e7W3-3GYO5Mhfm6cMrNeEnwKS5S48CNz2s7eumcC7dkk-kuYBO00tc0&quot;,
+        <pre>16:00:54.158 [print] {
+  &quot;access_token&quot;: &quot;BQDKx8AiL-4hiUUO-xoUnUbtYdb55hfQO3s9FgGr95PxSj-e5Rqs5AGumei27S7dq0XLyxxcXC3iEpodqzcJx6Gef2NvXIBs-dbq1xEjxOE1QHBKMwY&quot;,
   &quot;token_type&quot;: &quot;Bearer&quot;,
   &quot;expires_in&quot;: 3600
 }
@@ -5782,7 +5782,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == '#string'</span>
 
-  <span class="lead-duration duration">0.082</span>
+  <span class="lead-duration duration">0.132</span>
 
 </div>
 
@@ -5809,7 +5809,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == 'Bearer'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -5836,7 +5836,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">def getToken = 'Bearer '+response.access_token</span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.040</span>
 
 </div>
 
@@ -5863,7 +5863,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print getToken</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -5881,7 +5881,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-20" class="collapse collapsable-details">
-        <pre>11:23:17.693 [print] Bearer BQBfCWnnVr8jZm3sV_pu38Gxn5D8gKRcPJHkBT0QtYREHqsem1X_RRPCbzL2e7W3-3GYO5Mhfm6cMrNeEnwKS5S48CNz2s7eumcC7dkk-kuYBO00tc0 
+        <pre>16:00:54.376 [print] Bearer BQDKx8AiL-4hiUUO-xoUnUbtYdb55hfQO3s9FgGr95PxSj-e5Rqs5AGumei27S7dq0XLyxxcXC3iEpodqzcJx6Gef2NvXIBs-dbq1xEjxOE1QHBKMwY 
 </pre>
       </div>
     </div>
@@ -5928,7 +5928,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">path 'api','token'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -5982,7 +5982,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field grant_type = 'client_credentials'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -6009,7 +6009,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_id = '98beab865b0a4976bc5c81a0aabbeaa8'</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -6036,7 +6036,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_secret = '1a350f35c33b413c849d09c6ae8d38e9'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6063,7 +6063,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.536</span>
+  <span class="lead-duration duration">0.588</span>
 
 </div>
 
@@ -6081,7 +6081,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-21" class="collapse collapsable-details">
-        <pre>11:23:17.761 request:
+        <pre>16:00:54.503 request:
 2 &gt; POST https://accounts.spotify.com/api/token
 2 &gt; Content-Type: application/x-www-form-urlencoded
 2 &gt; Content-Length: 119
@@ -6091,12 +6091,12 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 2 &gt; Accept-Encoding: gzip,deflate
 grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp;client_secret=1a350f35c33b413c849d09c6ae8d38e9
 
-11:23:18.290 response time in milliseconds: 527
+16:00:55.062 response time in milliseconds: 558
 2 &lt; 200
-2 &lt; date: Fri, 28 Jun 2024 16:23:18 GMT
+2 &lt; date: Fri, 28 Jun 2024 21:00:55 GMT
 2 &lt; content-type: application/json
-2 &lt; sp-trace-id: aff877c346744fa8
-2 &lt; x-envoy-upstream-service-time: 11
+2 &lt; sp-trace-id: 32743e18ff57ed2c
+2 &lt; x-envoy-upstream-service-time: 9
 2 &lt; server: envoy
 2 &lt; strict-transport-security: max-age=31536000
 2 &lt; x-content-type-options: nosniff
@@ -6104,9 +6104,9 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 2 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 2 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Set-Cookie: __Host-device_id=AQBMNJGdOw84xJ5ug0LQYpwq5BKeSVZxZ8CWL5tmLyECa-YAW_b_WSe0C9XrmlRixGQ82f-zaMNBERVHHW4v7EuWoXMYTQvjLZ0; Max-Age=3867075445286; Expires=Fri, 27 Mar 124567 08:04:44 GMT; Domain=accounts.spotify.com; Secure
+2 &lt; Set-Cookie: __Host-device_id=AQCTQFHHGxCcKAKebL5jOBA3YeF8BQyjF_t0ndWKtdVI9Oku3blahXw4orJ3gOZ_AZFCZ8MsDQSspG6dLMOoKxyeFbrjZqhKU9o; Max-Age=3867092102059; Expires=Tue, 06 Oct 124567 07:35:14 GMT; Domain=accounts.spotify.com; Secure
 2 &lt; Set-Cookie: sp_tr=false; Domain=accounts.spotify.com; Secure
-{&quot;access_token&quot;:&quot;BQBiuTbz0714Ra-FyGjFIHm-Qfa59jp3nGspH338_Q4CbnZId2Xy23hfORJZ7SxLDsaKZ58wSdtTRnYm63xngiyC19LxpaskOUJCUNwyB-YKV8DeDjE&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+{&quot;access_token&quot;:&quot;BQBWGbqUe0Pxe_z_6Ja0uGFo51RuH0Yk2sjmaxAJKXzUvoZT1mzW0Am-SAfV-iSS15b-SFoBDJhhZeNTGsa0KLaPVqSqN07qw_QAw6_G0SmNQ_zz1LM&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
 
 </pre>
       </div>
@@ -6127,7 +6127,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -6145,8 +6145,8 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-22" class="collapse collapsable-details">
-        <pre>11:23:18.296 [print] {
-  &quot;access_token&quot;: &quot;BQBiuTbz0714Ra-FyGjFIHm-Qfa59jp3nGspH338_Q4CbnZId2Xy23hfORJZ7SxLDsaKZ58wSdtTRnYm63xngiyC19LxpaskOUJCUNwyB-YKV8DeDjE&quot;,
+        <pre>16:00:55.070 [print] {
+  &quot;access_token&quot;: &quot;BQBWGbqUe0Pxe_z_6Ja0uGFo51RuH0Yk2sjmaxAJKXzUvoZT1mzW0Am-SAfV-iSS15b-SFoBDJhhZeNTGsa0KLaPVqSqN07qw_QAw6_G0SmNQ_zz1LM&quot;,
   &quot;token_type&quot;: &quot;Bearer&quot;,
   &quot;expires_in&quot;: 3600
 }
@@ -6170,7 +6170,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == '#string'</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -6197,7 +6197,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == 'Bearer'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -6269,7 +6269,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-23" class="collapse collapsable-details">
-        <pre>11:23:18.304 [print] Bearer BQBiuTbz0714Ra-FyGjFIHm-Qfa59jp3nGspH338_Q4CbnZId2Xy23hfORJZ7SxLDsaKZ58wSdtTRnYm63xngiyC19LxpaskOUJCUNwyB-YKV8DeDjE 
+        <pre>16:00:55.078 [print] Bearer BQBWGbqUe0Pxe_z_6Ja0uGFo51RuH0Yk2sjmaxAJKXzUvoZT1mzW0Am-SAfV-iSS15b-SFoBDJhhZeNTGsa0KLaPVqSqN07qw_QAw6_G0SmNQ_zz1LM 
 </pre>
       </div>
     </div>
@@ -6303,7 +6303,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 </div>
 
 
-  <span class="lead-duration duration">0.797</span>
+  <span class="lead-duration duration">0.988</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
@@ -6373,7 +6373,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = Token.getToken</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -6400,7 +6400,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.680</span>
+  <span class="lead-duration duration">0.900</span>
 
 </div>
 
@@ -6418,16 +6418,16 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-26" class="collapse collapsable-details">
-        <pre>11:23:18.314 request:
+        <pre>16:00:55.090 request:
 3 &gt; GET https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy
-3 &gt; Authorization: Bearer BQBiuTbz0714Ra-FyGjFIHm-Qfa59jp3nGspH338_Q4CbnZId2Xy23hfORJZ7SxLDsaKZ58wSdtTRnYm63xngiyC19LxpaskOUJCUNwyB-YKV8DeDjE
+3 &gt; Authorization: Bearer BQBWGbqUe0Pxe_z_6Ja0uGFo51RuH0Yk2sjmaxAJKXzUvoZT1mzW0Am-SAfV-iSS15b-SFoBDJhhZeNTGsa0KLaPVqSqN07qw_QAw6_G0SmNQ_zz1LM
 3 &gt; Host: api.spotify.com
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 3 &gt; Accept-Encoding: gzip,deflate
 
 
-11:23:18.958 response time in milliseconds: 638
+16:00:55.693 response time in milliseconds: 588
 3 &lt; 200
 3 &lt; content-type: application/json; charset=utf-8
 3 &lt; cache-control: public, max-age=7200
@@ -6439,7 +6439,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 3 &lt; access-control-max-age: 604800
 3 &lt; strict-transport-security: max-age=31536000
 3 &lt; x-content-type-options: nosniff
-3 &lt; date: Fri, 28 Jun 2024 16:23:18 GMT
+3 &lt; date: Fri, 28 Jun 2024 21:00:55 GMT
 3 &lt; server: envoy
 3 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 3 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
@@ -7250,7 +7250,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">print respuesta</span>
 
-  <span class="lead-duration duration">0.041</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -7268,7 +7268,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-27" class="collapse collapsable-details">
-        <pre>11:23:19.033 [print] {
+        <pre>16:00:56.014 [print] {
   &quot;album_type&quot;: &quot;album&quot;,
   &quot;artists&quot;: [
     {
@@ -10273,7 +10273,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.id == '4aawyAB9vmqN3uQ7FjRGTy'</span>
 
-  <span class="lead-duration duration">0.059</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -10300,7 +10300,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.label == 'Mr.305/Polo Grounds Music/RCA Records'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -10327,7 +10327,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.name == 'Global Warming'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -10354,7 +10354,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.popularity == 54</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -10381,7 +10381,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.label == '#string'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -10408,7 +10408,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $ contains {&quot;type&quot;: &quot;album&quot;}</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -10435,7 +10435,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def validarNombre = $.name</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -10462,7 +10462,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">print validarNombre</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -10480,7 +10480,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-28" class="collapse collapsable-details">
-        <pre>11:23:19.101 [print] Global Warming 
+        <pre>16:00:56.065 [print] Global Warming 
 </pre>
       </div>
     </div>
@@ -10500,7 +10500,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def validarTipoAlbum = $.album_type</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -10527,7 +10527,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match validarTipoAlbum == '#regex [a-zA-Z]+'</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -10565,7 +10565,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 </div>
 
 
-  <span class="lead-duration duration">4.423</span>
+  <span class="lead-duration duration">6.857</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
@@ -10608,7 +10608,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">url baseSpotify</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -10626,7 +10626,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-31" class="collapse collapsable-details">
-        <pre>11:23:15.863 Se realiz&oacute; la ejecuci&oacute;n en el ambiente:  cert 
+        <pre>16:00:50.971 Se realiz&oacute; la ejecuci&oacute;n en el ambiente:  cert 
 </pre>
       </div>
     </div>
@@ -10646,7 +10646,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def Token = call read('classpath:examples/01-Post/getTokenSpotify.feature')</span>
 
-  <span class="lead-duration duration">2.260</span>
+  <span class="lead-duration duration">3.544</span>
 
 </div>
 
@@ -10700,7 +10700,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; Given</span>
   <span class="name">url 'https://accounts.spotify.com/'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -10727,7 +10727,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">path 'api','token'</span>
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.069</span>
 
 </div>
 
@@ -10754,7 +10754,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">header Content-Type = 'application/x-www-form-urlencoded'</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -10781,7 +10781,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field grant_type = 'client_credentials'</span>
 
-  <span class="lead-duration duration">0.230</span>
+  <span class="lead-duration duration">0.503</span>
 
 </div>
 
@@ -10808,7 +10808,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_id = '98beab865b0a4976bc5c81a0aabbeaa8'</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -10835,7 +10835,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_secret = '1a350f35c33b413c849d09c6ae8d38e9'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -10862,7 +10862,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">1.162</span>
+  <span class="lead-duration duration">1.911</span>
 
 </div>
 
@@ -10880,7 +10880,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-32" class="collapse collapsable-details">
-        <pre>11:23:16.759 request:
+        <pre>16:00:52.701 request:
 1 &gt; POST https://accounts.spotify.com/api/token
 1 &gt; Content-Type: application/x-www-form-urlencoded
 1 &gt; Content-Length: 119
@@ -10890,12 +10890,12 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 1 &gt; Accept-Encoding: gzip,deflate
 grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp;client_secret=1a350f35c33b413c849d09c6ae8d38e9
 
-11:23:17.470 response time in milliseconds: 697
+16:00:53.872 response time in milliseconds: 1141
 1 &lt; 200
-1 &lt; date: Fri, 28 Jun 2024 16:23:17 GMT
+1 &lt; date: Fri, 28 Jun 2024 21:00:53 GMT
 1 &lt; content-type: application/json
-1 &lt; sp-trace-id: eacca360bd869835
-1 &lt; x-envoy-upstream-service-time: 19
+1 &lt; sp-trace-id: 09fad58877fcca16
+1 &lt; x-envoy-upstream-service-time: 11
 1 &lt; server: envoy
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
@@ -10903,9 +10903,9 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Set-Cookie: __Host-device_id=AQCcDidb765qgTMNy_jY0ySyNPbbpu9BsJnTtoFZUj2OrzOJ64lfQdc-3KIBTWki_NifCMeOErIEsw2-UEx-WDS0bS2mwaRfEaI; Max-Age=3867075444452; Expires=Fri, 27 Mar 124567 07:50:49 GMT; Domain=accounts.spotify.com; Secure
+1 &lt; Set-Cookie: __Host-device_id=AQCxrtt4Tp1u5ybPA0HrhBH9Fo6E2SjRA7NxUuTLJUQDBW4zbM9qUIGcvGMZwnx9wppgQ_EqCB4McR815pz5R4jbb8bKj5eMxOI; Max-Age=3867092100833; Expires=Tue, 06 Oct 124567 07:14:46 GMT; Domain=accounts.spotify.com; Secure
 1 &lt; Set-Cookie: sp_tr=false; Domain=accounts.spotify.com; Secure
-{&quot;access_token&quot;:&quot;BQADuXw6yc2y-puUoqDjOIzPhQTWKnYqLicieXaCd8YQ4c-LzH8hSKYOJvCY_2JH0v24G8TwfmAmxtDPFZw5n9oA-jXzgFdiHj661kod6oj1I81409s&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+{&quot;access_token&quot;:&quot;BQD_Jj7p0OUvzjfgqn-r6WJdqHdILkNa-yNCshK6wp6faUDSFKa-Z74fvCdCjio6fttrbjfrX77gc0B4ru1nD6doc_WxlEuhPOGpF8eERhTp6XaGswI&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
 
 </pre>
       </div>
@@ -10926,7 +10926,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.053</span>
 
 </div>
 
@@ -10944,8 +10944,8 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-33" class="collapse collapsable-details">
-        <pre>11:23:17.575 [print] {
-  &quot;access_token&quot;: &quot;BQADuXw6yc2y-puUoqDjOIzPhQTWKnYqLicieXaCd8YQ4c-LzH8hSKYOJvCY_2JH0v24G8TwfmAmxtDPFZw5n9oA-jXzgFdiHj661kod6oj1I81409s&quot;,
+        <pre>16:00:54.155 [print] {
+  &quot;access_token&quot;: &quot;BQD_Jj7p0OUvzjfgqn-r6WJdqHdILkNa-yNCshK6wp6faUDSFKa-Z74fvCdCjio6fttrbjfrX77gc0B4ru1nD6doc_WxlEuhPOGpF8eERhTp6XaGswI&quot;,
   &quot;token_type&quot;: &quot;Bearer&quot;,
   &quot;expires_in&quot;: 3600
 }
@@ -10969,7 +10969,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == '#string'</span>
 
-  <span class="lead-duration duration">0.077</span>
+  <span class="lead-duration duration">0.143</span>
 
 </div>
 
@@ -10996,7 +10996,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == 'Bearer'</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -11023,7 +11023,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">def getToken = 'Bearer '+response.access_token</span>
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.057</span>
 
 </div>
 
@@ -11050,7 +11050,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print getToken</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -11068,7 +11068,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-34" class="collapse collapsable-details">
-        <pre>11:23:17.689 [print] Bearer BQADuXw6yc2y-puUoqDjOIzPhQTWKnYqLicieXaCd8YQ4c-LzH8hSKYOJvCY_2JH0v24G8TwfmAmxtDPFZw5n9oA-jXzgFdiHj661kod6oj1I81409s 
+        <pre>16:00:54.377 [print] Bearer BQD_Jj7p0OUvzjfgqn-r6WJdqHdILkNa-yNCshK6wp6faUDSFKa-Z74fvCdCjio6fttrbjfrX77gc0B4ru1nD6doc_WxlEuhPOGpF8eERhTp6XaGswI 
 </pre>
       </div>
     </div>
@@ -11115,7 +11115,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">path 'api','token'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -11169,7 +11169,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field grant_type = 'client_credentials'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -11196,7 +11196,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">form field client_id = '98beab865b0a4976bc5c81a0aabbeaa8'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -11250,7 +11250,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.592</span>
+  <span class="lead-duration duration">0.534</span>
 
 </div>
 
@@ -11268,7 +11268,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-35" class="collapse collapsable-details">
-        <pre>11:23:17.732 request:
+        <pre>16:00:54.485 request:
 2 &gt; POST https://accounts.spotify.com/api/token
 2 &gt; Content-Type: application/x-www-form-urlencoded
 2 &gt; Content-Length: 119
@@ -11278,12 +11278,12 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 2 &gt; Accept-Encoding: gzip,deflate
 grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp;client_secret=1a350f35c33b413c849d09c6ae8d38e9
 
-11:23:18.319 response time in milliseconds: 587
+16:00:55.003 response time in milliseconds: 516
 2 &lt; 200
-2 &lt; date: Fri, 28 Jun 2024 16:23:18 GMT
+2 &lt; date: Fri, 28 Jun 2024 21:00:55 GMT
 2 &lt; content-type: application/json
-2 &lt; sp-trace-id: e1ae417176f6774b
-2 &lt; x-envoy-upstream-service-time: 14
+2 &lt; sp-trace-id: c8f9c6d711ef525a
+2 &lt; x-envoy-upstream-service-time: 11
 2 &lt; server: envoy
 2 &lt; strict-transport-security: max-age=31536000
 2 &lt; x-content-type-options: nosniff
@@ -11291,9 +11291,9 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 2 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 2 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Set-Cookie: __Host-device_id=AQDYMjsNzZlDrpoxZblqnaE0VLuFTKzkU9w1V9N1fHdvjXwYsx3cnF5zph0PZL8tAEj0YjUvysqkY3mO75kfhHs-j0eE4bdaxc4; Max-Age=3867075445318; Expires=Fri, 27 Mar 124567 08:05:16 GMT; Domain=accounts.spotify.com; Secure
+2 &lt; Set-Cookie: __Host-device_id=AQDKAIHWrmHjSVQXfcv5SLsFNN3YX7uXKYWkKxKuWBDSbp-ZPqK46Y67C5ByChkG7GtQi_-TXPEZNtmw63Nj3Cfn2y-5vHh91dQ; Max-Age=3867092102000; Expires=Tue, 06 Oct 124567 07:34:15 GMT; Domain=accounts.spotify.com; Secure
 2 &lt; Set-Cookie: sp_tr=false; Domain=accounts.spotify.com; Secure
-{&quot;access_token&quot;:&quot;BQBxu2CyR0Df2C9iZsZTiAlY7NWVIVG9Wyhmmy3L3VjHe-7O5_gd7CjndeSLgM8O6WF6QqZvN834HwY6hsz1nZ3PzqDMAZiFxBSHRO2eQnXZQcC50rg&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+{&quot;access_token&quot;:&quot;BQBUJcuFTRGyKf7bAzIgW7UKFs76FvFKdO9X4kgt8ZmmhVxKmqnC_JYinBJIoioU28JBLHujKlSzRFdyMq0yreq5oA3gcwvC_UxxlsF8Z6P8WDFn-uQ&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
 
 </pre>
       </div>
@@ -11314,7 +11314,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -11332,8 +11332,8 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-36" class="collapse collapsable-details">
-        <pre>11:23:18.322 [print] {
-  &quot;access_token&quot;: &quot;BQBxu2CyR0Df2C9iZsZTiAlY7NWVIVG9Wyhmmy3L3VjHe-7O5_gd7CjndeSLgM8O6WF6QqZvN834HwY6hsz1nZ3PzqDMAZiFxBSHRO2eQnXZQcC50rg&quot;,
+        <pre>16:00:55.010 [print] {
+  &quot;access_token&quot;: &quot;BQBUJcuFTRGyKf7bAzIgW7UKFs76FvFKdO9X4kgt8ZmmhVxKmqnC_JYinBJIoioU28JBLHujKlSzRFdyMq0yreq5oA3gcwvC_UxxlsF8Z6P8WDFn-uQ&quot;,
   &quot;token_type&quot;: &quot;Bearer&quot;,
   &quot;expires_in&quot;: 3600
 }
@@ -11357,7 +11357,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == '#string'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -11384,7 +11384,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.token_type == 'Bearer'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -11411,7 +11411,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">def getToken = 'Bearer '+response.access_token</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -11438,7 +11438,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">&gt; *</span>
   <span class="name">print getToken</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -11456,7 +11456,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-37" class="collapse collapsable-details">
-        <pre>11:23:18.325 [print] Bearer BQBxu2CyR0Df2C9iZsZTiAlY7NWVIVG9Wyhmmy3L3VjHe-7O5_gd7CjndeSLgM8O6WF6QqZvN834HwY6hsz1nZ3PzqDMAZiFxBSHRO2eQnXZQcC50rg 
+        <pre>16:00:55.018 [print] Bearer BQBUJcuFTRGyKf7bAzIgW7UKFs76FvFKdO9X4kgt8ZmmhVxKmqnC_JYinBJIoioU28JBLHujKlSzRFdyMq0yreq5oA3gcwvC_UxxlsF8Z6P8WDFn-uQ 
 </pre>
       </div>
     </div>
@@ -11490,7 +11490,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 </div>
 
 
-  <span class="lead-duration duration">0.768</span>
+  <span class="lead-duration duration">1.125</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
@@ -11533,7 +11533,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">Given</span>
   <span class="name">path '/v1/albums/4aawyAB9vmqN3uQ7FjRGTy'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -11560,7 +11560,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = Token.getToken</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -11587,7 +11587,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.718</span>
+  <span class="lead-duration duration">0.764</span>
 
 </div>
 
@@ -11605,16 +11605,16 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-40" class="collapse collapsable-details">
-        <pre>11:23:18.330 request:
+        <pre>16:00:55.031 request:
 3 &gt; GET https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy
-3 &gt; Authorization: Bearer BQBxu2CyR0Df2C9iZsZTiAlY7NWVIVG9Wyhmmy3L3VjHe-7O5_gd7CjndeSLgM8O6WF6QqZvN834HwY6hsz1nZ3PzqDMAZiFxBSHRO2eQnXZQcC50rg
+3 &gt; Authorization: Bearer BQBUJcuFTRGyKf7bAzIgW7UKFs76FvFKdO9X4kgt8ZmmhVxKmqnC_JYinBJIoioU28JBLHujKlSzRFdyMq0yreq5oA3gcwvC_UxxlsF8Z6P8WDFn-uQ
 3 &gt; Host: api.spotify.com
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 3 &gt; Accept-Encoding: gzip,deflate
 
 
-11:23:19.036 response time in milliseconds: 679
+16:00:55.777 response time in milliseconds: 723
 3 &lt; 200
 3 &lt; content-type: application/json; charset=utf-8
 3 &lt; cache-control: public, max-age=7200
@@ -11626,7 +11626,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
 3 &lt; access-control-max-age: 604800
 3 &lt; strict-transport-security: max-age=31536000
 3 &lt; x-content-type-options: nosniff
-3 &lt; date: Fri, 28 Jun 2024 16:23:18 GMT
+3 &lt; date: Fri, 28 Jun 2024 21:00:55 GMT
 3 &lt; server: envoy
 3 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 3 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
@@ -12410,7 +12410,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def respuesta = response</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -12437,7 +12437,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">print respuesta</span>
 
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.234</span>
 
 </div>
 
@@ -12455,7 +12455,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-41" class="collapse collapsable-details">
-        <pre>11:23:19.062 [print] {
+        <pre>16:00:56.027 [print] {
   &quot;album_type&quot;: &quot;album&quot;,
   &quot;artists&quot;: [
     {
@@ -15460,7 +15460,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.id == '4aawyAB9vmqN3uQ7FjRGTy'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -15487,7 +15487,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.label == 'Mr.305/Polo Grounds Music/RCA Records'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -15514,7 +15514,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.name == 'Global Warming'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -15541,7 +15541,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.popularity == 54</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.091</span>
 
 </div>
 
@@ -15568,7 +15568,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $.label == '#string'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -15595,7 +15595,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match $ contains {&quot;type&quot;: &quot;album&quot;}</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -15622,7 +15622,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def validarNombre = $.name</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -15649,7 +15649,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">print validarNombre</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -15667,7 +15667,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
           <a>Doc string</a>
       </div>
       <div id="msg-42" class="collapse collapsable-details">
-        <pre>11:23:19.074 [print] Global Warming 
+        <pre>16:00:56.146 [print] Global Warming 
 </pre>
       </div>
     </div>
@@ -15687,7 +15687,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">def validarTipoAlbum = $.album_type</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -15714,7 +15714,7 @@ grant_type=client_credentials&amp;client_id=98beab865b0a4976bc5c81a0aabbeaa8&amp
   <span class="keyword indention">*</span>
   <span class="name">match validarTipoAlbum == '#regex [a-zA-Z]+'</span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
